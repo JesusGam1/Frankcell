@@ -1,48 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        .navbar-dark .nav-link {
-            color: white;
-        }
-        .navbar-height {
-            height: 3.5vh;
-        }
-        .navbar-custom .navbar-nav {
-            margin: auto;
-        }
-        @media (max-width: 576px) {
-            .navbar-custom {
-                height: auto;
-            }
-            .navbar-custom .navbar-nav {
-                margin: 0;
-            }
-            .navbar-height {
-            height: 10%;
-            }
-            .navbar-collapse {
-                flex-direction: column;
-                align-items: center;
-            }
-            .buscar-producto {
-                margin-top: 15px;
-                margin-bottom: 10px;
-                width: 100%;
-            }
-            .btn-is {
-                width: 91%;
-            }
-        }
-    </style>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+
 </head>
+
 <body>
 
-    <!--
+     <!--
 
     navbar 
 
@@ -54,25 +25,29 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">FranKarcel</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav, #navbarNavBottom" aria-controls="navbarNav navbarNavBottom" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav, #navbarNavBottom" aria-controls="navbarNav navbarNavBottom"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto d-flex flex-grow-1" style="max-width: 600px;">
-                    <input type="text" class="form-control buscar-producto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar producto">
+                    <input type="text" class="form-control buscar-producto" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" placeholder="Buscar producto">
                 </div>
-                <button type="button" class="btn btn-primary ms-3 btn-is" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+                <button type="button" class="btn btn-primary ms-3 btn-is" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">Iniciar sesión</button>
             </div>
         </div>
     </nav>
-    
+
     <!-- 
     
     Modal 
     Iniciar sesión 
     
     -->
-    
+
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -84,11 +59,13 @@
                     <form>
                         <div class="mb-3">
                             <label for="correo" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+                            <input type="email" class="form-control" id="correo"
+                                placeholder="Ingrese su correo electrónico">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                            <input type="password" class="form-control" id="password"
+                                placeholder="Ingrese su contraseña">
                         </div>
                         <button type="submit" class="btn btn-primary">Iniciar sesión</button> <br>
                         <div class="mt-3">
@@ -100,7 +77,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!--
 
@@ -117,7 +94,7 @@
     empieza
 
     -->
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-height">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNavBottom">
@@ -151,6 +128,64 @@
 
     -->
 
+
+    <!--Aqui empieza el carucell -->
+    
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Imagenes/2147695913.jpg" class="d-block w-100 img-fluid" id="fotocarucel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Imagenes/2147695913.jpg" class="d-block w-100 img-fluid" id="fotocarucel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Imagenes/2147695913.jpg" class="d-block w-100 img-fluid" id="fotocarucel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <br><br>
+          <!--Aqui termina el carucell -->
+
+          <div class="container" style="width: 70%;">
+            <div class="card mb-3" style="max-width: 870px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="/Imagenes/celulares.jpeg" class="img-fluid rounded-end" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Tenemos grandes ofertas en todos nuestros celulares de 
+                        todas las marcas</h3>
+                      <p class="card-text">Accede nuestro catalogo y conoce los
+                        nuestros celulares con garantía y grandes
+                        ofertas.</p>
+                        <div style="text-align: center;">
+                            <button class="btn btn-warning" type="button" style="font-size: 25px;">telefonía</button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        
+
+          
+
+
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>
+
