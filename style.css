@@ -1,0 +1,54 @@
+#fotocarucel{
+    width: auto;
+    height: 350px;
+}
+.navbar-dark .nav-link {
+    color: white;
+}
+.navbar-height {
+    height: 3.5vh;
+}
+.navbar-custom .navbar-nav {
+    margin: auto;
+}
+@media (max-width: 576px) {
+    .navbar-custom {
+        height: auto;
+    }
+    .navbar-custom .navbar-nav {
+        margin: 0;
+    }
+    .navbar-height {
+    height: 10%;
+    }
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buscar-producto {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .btn-is {
+        width: 91%;
+    }
+}
+.custom-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+  }
+  .telefonia-button {
+      background-color: #ff9900;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+  .btn-icono {
+    width: 50%;
+    height: 60px;
+  }
