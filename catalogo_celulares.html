@@ -159,7 +159,7 @@ empieza
     <br>
         <!--Empieza LAS IMAGENES, cards -->
 
-    <div class="Catalogo_celulares" style="margin-left: 10%;">
+    <div class="Catalogo_celulares mb-3 mt-3" style="margin-left: 10%;">
         <div class="row"  >
          
             <div class="card" style="width: 18rem;">
@@ -169,14 +169,25 @@ empieza
                   <h3 class="card-title">$9,000</h3>
                   <p class="card-text">Con el nuevo motorola edge 40 pro acelera toda tu experiencia gracias a la plataforma móvil Snapdragon® 8 Gen 2,
                      sistema de 3 cámaras con 50 MP y un</p>
-                     
-                  <a href="#" class="btn btn-primary btn-icono">Detalles</a> 
-
+                     <div class="dropdown">
+                   
+                        <p class=" gap-1">
+                            <a class="btn btn-primary btn-icono" data-bs-toggle="collapse" href="#collapse_celulares" role="button" aria-expanded="false" aria-controls="collapseExample">
+                              Abrir detalles
+                            </a>
+                       
+                        </p>
+                       
+                            </div>
                   
               </div>
 
 
               </div>
+            
+
+
+              <!-- segundo card-->
               <div class="card" style="width: 18rem;">
                 <img src="Imagenes/moto edge40 telefono.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -208,7 +219,57 @@ empieza
                 </div>
                 
               </div>
+              <div class="collapse collapse_celulares mt-3 " id="collapse_celulares" style="width: 86%; height: 50%;">
+                <div class="card card-body">
+                    <!-- Contenedor principal con flexbox -->
+                    <div class="d-flex align-items-center">
+                        <!-- Contenedor de imágenes verticales -->
+                        <div class="Catalogo_celulares_img_vertical">
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="Imagenes/moto edge40 telefono.png" alt="" style="width: 100px; height: auto; margin-bottom: 10px;">
+                                <img src="Imagenes/moto edge40 telefono.png" alt="" style="width: 100px; height: auto; margin-bottom: 10px;">
+                                <img src="Imagenes/moto edge40 telefono.png" alt="" style="width: 100px; height: auto; margin-bottom: 10px;">
+                                <img src="Imagenes/moto edge40 telefono.png" alt="" style="width: 100px; height: auto; margin-bottom: 10px;">
+                            </div>
+                        </div>
+                        <!-- Carrusel -->
+                        <div id="carouselExample" class="carousel slide" style="margin-left: 20px;">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Imagenes/moto edge40 telefono.png" class="d-block" style="width: auto; height: 300px;" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes/moto edge40 telefono.png" class="d-block" style="width: auto; height: 300px;" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Imagenes/moto edge40 telefono.png" class="d-block" style="width: auto; height: 300px;" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="texto_carrusel" style=""">
+                            <h3> Hola</h3>
+                            <br>
+                            <br>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium sunt ducimus, dignissimos aspernatur nobis quidem tempore harum ex minima id architecto eos blanditiis quos aliquid quis odio. Ullam, aliquid doloremque!</p>
+                            <a href="#" class="btn btn-primary btn-icono-comprar">Comprar</a>
 
+                    </div>
+                    <!-- Aquí acaba el carrusel -->
+                  
+
+                     </div>
+                </div>
+            </div>
+            
+                
 
 
 

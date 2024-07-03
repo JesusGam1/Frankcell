@@ -11,12 +11,17 @@ width: 50%;
     width: 100%;
     border-radius: 10%;
 }
+.Catalogo_celulares{
 
+
+}
+.collapse_celulares{
+border-radius: -50%;
+}
 
 .btn-icono {
     width: 50%;
-    height: 40px;
-    background-color: #7EB315;
+        background-color: #7EB315;
     border: solid 3px #7EB315;
     }
     
@@ -29,3 +34,25 @@ width: 50%;
 margin-left: 1%;
 
 }
+
+
+.btn-icono-comprar {
+    width: 20%;
+    background-color: #7EB315;
+    border: solid 3px #7EB315;
+    }
+    
+    .btn-icono-comprar:hover {
+    background-color: white;
+    border: solid 3px #7EB315;
+    color: #7EB315;
+    }
+
+
+
+
+
+
+
+
+
