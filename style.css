@@ -12,10 +12,13 @@
         .navbar-custom .navbar-nav {
             margin: auto;
         }
+
+        
         @media (max-width: 576px) {
             .navbar-custom {
                 height: auto;
             }
+
             .navbar-custom .navbar-nav {
                 margin: 0;
             }
