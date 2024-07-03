@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/stlyecatalogo_celulares.css">
+
+
+    <title>Catalogo</title>
+</head>
+<body>
+    <!--
+
+    navbar 
+
+    Parte superior
+    empieza
+
+    -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FranKarcel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav, #navbarNavBottom" aria-controls="navbarNav navbarNavBottom" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto d-flex flex-grow-1" style="max-width: 600px;">
+                    <input type="text" class="form-control buscar-producto" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buscar producto">
+                </div>
+                <button type="button" class="btn btn-primary ms-3 btn-is" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar sesión</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 
+    <!-- 
+  
+  Modal 
+  Iniciar sesión 
+  
+  -->
+  
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Iniciar sesión</button> <br>
+                    <div class="mt-3">
+                        <label for="form-label">¿Aún no tienes cuenta?</label>
+                        <a href="#">Regístrate</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+
+termina
+
+navbar 
+Parte superior
+
+--------------------------
+
+navbar
+
+Parte inferior
+empieza
+
+-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-height">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavBottom">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Celulares</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="contenedor celulares" style="align-items: center; text-align: center;">
+    <img src="Imagenes/bannercelular.webp" alt="" class="" width="100%" height="90%">
+    <br>
+    <br>
+    <h3>Catalogo Celulares</h3>
+    <br>
+    <br>
+    <div class="carrusel_de_marcas" > 
+        <div class="row">
+        <div class="col">
+            <img src="Imagenes/apple.png" alt="" class="" width="" style="margin-bottom: 20%;">
+
+        </div>
+
+        <div class="col">
+            <img src="Imagenes/samsungmarca.png" alt="" class="" width="" style="margin-top: 20%;">
+
+        </div>
+        <div class="col">
+            <img src="Imagenes/googlemarca.png" alt="" class="" width="">
+
+        </div>
+        <div class="col">
+            <img src="Imagenes/Motorolamarca.webp" alt="" class="" width="" style="margin-top: 10%;">
+
+        </div>
+        <div class="col">
+            <img src="Imagenes/oppomarca.png" alt="" class="" width="" style="margin-top: 20%;">
+
+        </div>
+        
+        <div class="col">
+            <img src="Imagenes/lgmarca.png" alt="" class="" width="" style="margin-top: 10%;">
+
+        </div>
+        </div>
+
+
+
+    </div>
+    <!--Aqui terminan las imagenes de la marca -->
+    <br>
+    <br>
+    <h3>Lo mas vendido  </h3>
+    <br>
+    <br>
+        <!--Empieza LAS IMAGENES, cards -->
+
+    <div class="Catalogo_celulares" style="margin-left: 10%;">
+        <div class="row"  >
+         
+            <div class="card" style="width: 18rem;">
+                <img src="Imagenes/moto edge40 telefono.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" >Moto Edge 40 Pro</h5>
+                  <h3 class="card-title">$9,000</h3>
+                  <p class="card-text">Con el nuevo motorola edge 40 pro acelera toda tu experiencia gracias a la plataforma móvil Snapdragon® 8 Gen 2,
+                     sistema de 3 cámaras con 50 MP y un</p>
+                     
+                  <a href="#" class="btn btn-primary btn-icono">Detalles</a> 
+
+                  
+              </div>
+
+
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="Imagenes/moto edge40 telefono.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" >Moto Edge 40 Pro</h5>
+                  <h3 class="card-title">$9,000</h3>
+                  <p class="card-text">Con el nuevo motorola edge 40 pro acelera toda tu experiencia gracias a la plataforma móvil Snapdragon® 8 Gen 2,
+                     sistema de 3 cámaras con 50 MP y un</p>
+                  <a href="#" class="btn btn-primary btn-icono">Abrir detalles</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="Imagenes/moto edge40 telefono.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" >Moto Edge 40 Pro</h5>
+                  <h3 class="card-title">$9,000</h3>
+                  <p class="card-text">Con el nuevo motorola edge 40 pro acelera toda tu experiencia gracias a la plataforma móvil Snapdragon® 8 Gen 2,
+                     sistema de 3 cámaras con 50 MP y un</p>
+                  <a href="#" class="btn btn-primary btn-icono">Abrir detalles</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="Imagenes/moto edge40 telefono.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" >Moto Edge 40 Pro</h5>
+                  <h3 class="card-title">$9,000</h3>
+                  <p class="card-text">Con el nuevo motorola edge 40 pro acelera toda tu experiencia gracias a la plataforma móvil Snapdragon® 8 Gen 2,
+                     sistema de 3 cámaras con 50 MP y un</p>
+                  <a href="#" class="btn btn-primary btn-icono">Abrir detalles</a>
+                </div>
+                
+              </div>
+
+
+
+
+        </div>
+    
+            
+
+
+
+
+
+
+                  </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="java_desplegable_prueba.js"></script>
+</body>
+</html>

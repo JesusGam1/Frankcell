@@ -1,0 +1,31 @@
+.carrusel_de_marcas img{
+width: 50%;
+
+}
+
+.Catalogo_celulares .card-body{
+    
+    background-color: rgb(227, 227, 227);
+    border-color: black;
+    border-width: 50%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+
+.btn-icono {
+    width: 50%;
+    height: 40px;
+    background-color: #7EB315;
+    border: solid 3px #7EB315;
+    }
+    
+    .btn-icono:hover {
+    background-color: white;
+    border: solid 3px #7EB315;
+    color: #7EB315;
+    }
+.card{
+margin-left: 1%;
+
+}
