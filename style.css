@@ -1,7 +1,14 @@
+.img-s{
+    
+    height: 300px;
+
+}
+
 #fotocarucel{
     width: auto;
     height: 350px;
 }
+
 .navbar-dark .nav-link {
     color: white;
 }

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <!--
+    navbar 
+
+    Parte superior
+    empieza
+
+    -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FranKarcell</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav, #navbarNavBottom" aria-controls="navbarNav navbarNavBottom" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto d-flex flex-grow-1" style="max-width: 600px;">
+          <input type="text" class="form-control buscar-producto" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Buscar producto">
+        </div>
+        <button type="button" class="btn btn-primary ms-3 btn-is" data-bs-toggle="modal"
+          data-bs-target="#loginModal">Iniciar sesión</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 
+    
+    Modal 
+    Iniciar sesión 
+    
+    -->
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button> <br>
+            <div class="mt-3">
+              <label for="form-label">¿Aún no tienes cuenta?</label>
+              <a href="#">Regístrate</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+
+    termina
+
+    navbar 
+    Parte superior
+
+    --------------------------
+
+    navbar
+
+    Parte inferior
+    empieza
+
+    -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-height">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavBottom">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Celulares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Accesorios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--
+
+    termina
+
+    navbar
+    Parte inferior
+
+    -->
+
+  <!--navar de abajo -->
+  <nav class="navbar" style="background-color: gray;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="/Imagenes/soporte.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-center">
+      </a>
+      <p class="text-center">
+      <h4 style="color: white;">Servicio tecnico</h4>
+      </p>
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-warning" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Consultar orden
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content ">
+              <div class="modal-header bg-secondary text-center">
+                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">Consulta servicio técnico</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="container " style="height: 50%; width: 500px;">
+                  <img src="/Imagenes/search-2041815_1280.jpg" class="img-fluid" style="width: 200px; width: 600px;"> <br>
+                </div>
+                <div class="container-fluid mt-3 ">
+                  <form action="" class="row">
+                    <div class="col-6">
+                      <input type="number" class="form-control" name="orden" id="orden"
+                        placeholder="Ingresa el número de orden">
+                    </div>
+                    <div class="col-6 text-center">
+                      <input type="submit" class="btn btn-dark w-100" value="Buscar Orden">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--aqui termina el navar de abajo -->
+
+  <!-- imagen de servicio -->
+  <img src="/Imagenes/pexels-paduret-1476321.jpg" class="img-fluid" alt="..."> <br>
+  <!--termina imagen de servicio -->
+
+  <div class="container-fluid">
+    <p class="text-center">!! Hola Bienvenido !!</p>
+    <p class="text-start">En FranKarcell te ayudamos a resolver cualquier inconveniente de una manera ágil y cómoda,a
+      través de la atención personalizada contamos con </p>
+    <p class="text-center"> técnicos certificados .</p>
+    <p class="text-start">Te ofrecemos un servicio integral, que incluye reparaciones de equipos de la gran variedad de
+      marcas y modelos, con refacciones originales y mano de obra con la maxima calidad.</p>
+  </div><br>
+
+  <div class="container mt-3 mb-3">
+    <h1 class="text-center">Servicios</h1> <br><br>
+    <div class="row mt-3">
+      <div class="col-lg-6 col-sm-12 text-center">
+        <h4> Reparación de Display de dispositivos con refacciones originales de la marca.</h4>
+      </div>
+      <div class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+        <img src="path_to_icon/icon.png" alt="Icono Celular">
+      </div>
+    </div><br><br><br>
+
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-lg-6 col-sm-12 order-lg-1 order-2 d-flex justify-content-center align-items-center">
+          <img src="path_to_icon/icon.png" alt="Celulares" class="custom-img">
+        </div>
+        <div class="col-lg-6 col-sm-12 order-lg-2 order-1 text-center mt-3">
+          <h4>Asesorías Uno a Uno con un chat interactivo y configuraciones</h4>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div class="container mt-3 mb-3">
+      <div class="row mt-3">
+        <div class="col-lg-6 col-sm-12 text-center">
+          <h4> Ofrecemos garantias con todos nuestros servicios y reparaciones </h4>
+        </div>
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+          <img src="path_to_icon/icon.png" alt="Icono Celular">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+</body>
+
+</html>
