@@ -1,0 +1,23 @@
+.sidebar {
+    background-color: #404740;
+    color: white;
+    min-width: 200px;
+    padding: 10px;
+}
+.sidebar h1, .sidebar button {
+    color: white;
+}
+.sidebar .accordion-button {
+    color: white;
+}
+.sidebar .accordion-button:not(.collapsed) {
+    background-color: #404740;
+}
+.boton-br {
+    background-color: #7eb315;
+    color: #e5e5e5;
+}
+.boton-br:hover {
+    color: #e5e5e5;
+
+}
