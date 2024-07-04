@@ -26,9 +26,6 @@
             margin-bottom: 0.5em;
             text-align: left;
         }
-        .nav-link.active {
-            
-        }
         .accordion-button {
             background-color: #404740;
             color: #E5E5E5;
@@ -65,11 +62,27 @@
             background-color: #E5E5E5;
             flex-grow: 1;
         }
+        @media (max-width: 767px) {
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+            .sidebar h1 {
+                text-align: center;
+                font-size: 2em;
+            }
+            .nav-link, .accordion-button {
+                text-align: center;
+            }
+            .tab-content {
+                padding: 1em;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <div class="d-flex">
+    <div class="d-flex flex-column flex-md-row">
         <div class="nav flex-column nav-pills me-3 sidebar" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
             <h1>Dashboard</h1>
@@ -157,4 +170,4 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</html>*
+</html>
