@@ -15,9 +15,8 @@ width: 50%;
 
 
 }
-.collapse_celulares{
-border-radius: -50%;
-}
+
+
 
 .btn-icono {
     width: 50%;
@@ -30,8 +29,12 @@ border-radius: -50%;
     border: solid 3px #7EB315;
     color: #7EB315;
     }
-.card{
+.card {
 margin-left: 1%;
+}
+.carta_collapse{
+
+    background-color: rgb(220, 219, 219);
 
 }
 
@@ -52,7 +55,20 @@ margin-left: 1%;
 
 
 
+.Catalogo_celulares_img_vertical img{
+border-left: 90%;
+border-radius: 10%;
+border: 1px;
+border-color: black;
+border-style: solid;
 
+}
 
+.Catalogo_celulares_img_vertical img:hover{
+    background-color: #7EB315;
+    box-shadow: 0 0 35px;
+    transition:  0.5s;
 
+}
+    
 
