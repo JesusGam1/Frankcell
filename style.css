@@ -12,12 +12,16 @@
 .navbar-dark .nav-link {
     color: white;
     
+    
 }
 .navbar-height {
     height: 3.5vh;
 }
 .navbar-custom .navbar-nav {
     margin: auto;
+}
+.btn-is {
+    background-color: #7EB315;
 }
 .btn-is {
     background-color: #7EB315;
@@ -43,6 +47,7 @@
     }
     .btn-is {
         width: 91%;
+        background-color: #7EB315;
         background-color: #7EB315;
     }
 }
@@ -109,7 +114,41 @@
         }
     
 
+        background-color: #7EB315;
+    }
+}
 .custom-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.telefonia-button {
+    background-color: #ff9900;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-icono {
+width: 50%;
+height: 60px;
+background-color: #7EB315;
+border: solid 3px #7EB315;
+}
+
+.btn-icono:hover {
+background-color: white;
+border: solid 3px #7EB315;
+color: #7EB315;
+}
+
+hr
+{
+    border: none;
+    border-top: solid 3px #404740;
+}
     width: 100%;
     max-width: 300px;
     height: auto;
