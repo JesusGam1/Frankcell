@@ -1,0 +1,74 @@
+.carrusel_de_marcas img{
+width: 50%;
+
+}
+
+.Catalogo_celulares .card-body{
+    
+    background-color: rgb(227, 227, 227);
+    border-color: black;
+    border-width: 50%;
+    width: 100%;
+    border-radius: 10%;
+}
+.Catalogo_celulares{
+
+
+}
+
+
+
+.btn-icono {
+    width: 50%;
+        background-color: #7EB315;
+    border: solid 3px #7EB315;
+    }
+    
+    .btn-icono:hover {
+    background-color: white;
+    border: solid 3px #7EB315;
+    color: #7EB315;
+    }
+.card {
+margin-left: 1%;
+}
+.carta_collapse{
+
+    background-color: rgb(220, 219, 219);
+
+}
+
+
+.btn-icono-comprar {
+    width: 20%;
+    background-color: #7EB315;
+    border: solid 3px #7EB315;
+    }
+    
+    .btn-icono-comprar:hover {
+    background-color: white;
+    border: solid 3px #7EB315;
+    color: #7EB315;
+    }
+
+
+
+
+
+.Catalogo_celulares_img_vertical img{
+border-left: 90%;
+border-radius: 10%;
+border: 1px;
+border-color: black;
+border-style: solid;
+
+}
+
+.Catalogo_celulares_img_vertical img:hover{
+    background-color: #7EB315;
+    box-shadow: 0 0 35px;
+    transition:  0.5s;
+
+}
+    
+
