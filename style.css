@@ -212,6 +212,13 @@ hr
     max-width: 300px;
     height: auto;
 }
+.custom-img{    
+    transition: 0.25s;
+}
+.custom-img:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
 .telefonia-button {
     background-color: #ff9900;
     border: none;
@@ -226,16 +233,45 @@ width: 50%;
 height: 60px;
 background-color: #7EB315;
 border: solid 3px #7EB315;
+align-items: center;
+justify-content: center;
 }
 
+/*Hover del botón*/
 .btn-icono:hover {
 background-color: white;
 border: solid 3px #7EB315;
 color: #7EB315;
 }
 
+/*Hover del icono*/
+.btn-icono:hover .icono1{
+    display: none;
+    transition: 0.5;
+}
+
+/*Hover de la variante del icono*/
+.btn-icono .icono2{
+    display: none;
+    transition: 0.5;
+}
+.btn-icono:hover .icono2{
+    display: inline;
+    transition: 0.5;
+}
+
 hr
 {
     border: none;
     border-top: solid 3px #404740;
+}
+
+/*Titulo del inicio*/
+.titulo-main{
+font-size: 80px;
+transition: 0.25s;
+}
+.titulo-main:hover{
+transform: scale(1.05);
+transition: 0.25s;
 }
