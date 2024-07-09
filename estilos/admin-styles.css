@@ -1,0 +1,19 @@
+.sidebar {
+    width: 250px;
+    background-color: #404740;
+    padding: 15px;
+    color: #e5e5e5;
+    height: 100vh;
+}
+.sidebar a {
+    color: #e5e5e5;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.sidebar a:hover {
+    background-color: #7eb315;
+}
+.sidebar .submenu {
+    padding-left: 20px;
+}
