@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estilos/admin-styles.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head> 
+
+<body>
+    <div class="" style="display:flex; justify-content:start;">
+        <div class="sidebar">
+            <h1>Dashboard</h1>
+            <a href="#">Estadísticas</a>
+            <div>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#productosMenu" aria-expanded="false"
+                    aria-controls="productosMenu">Productos ▼</a>
+                <div class="collapse submenu" id="productosMenu">
+                    <a href="inventario_y_gestion.html">Inventario y gestion</a>
+                    <a href="#">Registrar venta</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" data-bs-toggle="collapse" data-bs-target="#serviciosMenu" aria-expanded="false"
+                    aria-controls="serviciosMenu">Servicios ▼</a>
+                <div class="collapse submenu" id="serviciosMenu">
+                    <a href="#">Gestión</a>
+                    <a href="#">Ajustes a servicio</a>
+                    <a href="#">Servicios terminados</a>
+                </div>
+            </div>
+            <a href="#">Usuarios</a>
+            <a href="#">Notificaciones</a>
+        </div>    
+
+        <div class="container-fluid container" style="margin-top: 40px;">
+            <h2>Detalle Servicios</h2> 
+            <label for="busqueda" class="" style="margin-top: 40px;" >Buscar por folio: </label>
+            <div >  
+                <input type="text" class="" id="busqueda" placeholder="Folio">
+            </div>
+            <button type="button" class="btn btn-success" style="margin-top: 30px;">Registrar nueva solicitud</button>
+            <div class="" style="margin-top: 50px;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">folio</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Servicios</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Estado actual</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123</td>
+                            <td>Jesus</td>
+                            <td>Reparacion</td>
+                            <td>hardware</td>
+                            <td>En proceso</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td>456</td>
+                            <td>El Tunas</td>
+                            <td>Restauracion</td>
+                            <td>hardware</td>
+                            <td>En proceso</td>
+                            <td><button type="button" class="btn btn-success btn-sm">Editar</button></td>
+                        </tr>
+                        <tr>
+                            <td>789</td>
+                            <td>Tracker</td>
+                            <td>Restauracion</td>
+                            <td>Quitar cuenta</td>
+                            <td>finalizado</td>
+
+                            <td><button type="button" class="btn btn-success btn-sm">Editar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

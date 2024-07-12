@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./estilos/admin-styles.css">
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="" style="display: flex;">
+    <div class="sidebar" style="justify-content: end;">
+      <h1>Dashboard</h1>
+      <a href="#">Estadísticas</a>
+      <div>
+        <a href="#" data-bs-toggle="collapse" data-bs-target="#productosMenu" aria-expanded="false"
+          aria-controls="productosMenu">Productos ▼</a>
+        <div class="collapse submenu" id="productosMenu">
+          <a href="inventario_y_gestion.html">Inventario y gestion</a>
+          <a href="#">Registrar venta</a>
+        </div>
+      </div>
+      <div>
+        <a href="#" data-bs-toggle="collapse" data-bs-target="#serviciosMenu" aria-expanded="false"
+          aria-controls="serviciosMenu">Servicios ▼</a>
+        <div class="collapse submenu" id="serviciosMenu">
+          <a href="#">Gestión</a>
+          <a href="#">Ajustes a servicio</a>
+          <a href="#">Servicios terminados</a>
+        </div>
+      </div>
+      <a href="#">Usuarios</a>
+      <a href="#">Notificaciones</a>
+    </div>
+
+
+    <div class="container-fluid" >
+      <h1>Registrar venta</h1>
+
+      <div class="container-fluid" style="display: flex;justify-content:space-between;" >
+
+        <div class="row" style=" font-size: large;">
+          <div class="col-sm-12 col-lg-4" style="margin-right: 50px;">
+              <label for="productos" class="form-label">Elegir producto:</label>
+              <select class="form-select" id="productos">
+                  <option value="">Seleccionar producto...</option>
+                  <option value="iphone">iphone</option>
+                  <option value="cargador">cargador</option>
+                  <option value="funda">funda iphone 11</option>
+              </select>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+              <label for="cantidadproductos" class="form-label">Cantidad:</label>
+              <input type="text" class="form-control" id="cantidadproductos" name="cantidadproductos" placeholder="Ingrese la cantidad...">
+          </div>
+          <div class="col-sm-6 col-lg-3">
+              <label for="precioproductos" class="form-label">Precio:</label>
+              <input type="text" class="form-control" id="precioproductos" name="precioproductos" placeholder="Precio">
+          </div>
+      </div>
+  </div>
+  <div class="" align="center" style="margin: 50px;">
+    <button type="button" class="btn btn-success" style="width: 100%;">Insertar</button>
+  </div>
+  <div>
+    <table class="table" style="margin-top: 30px;">
+      <thead>
+        <tr>
+          <th scope="col">producto</th>
+          <th scope="col">cantidad</th>
+          <th scope="col">precio Unitario</th>
+          <th scope="col">precio total</th>
+        </tr>
+      </thead>
+      <tbody>
+  
+        <tr>
+          <th scope="row">funda iphone</th>
+          <td>2</td>
+          <td>$ 100</td>
+          <td>$ 200</td>
+        </tr>
+        <tr>
+          <th scope="row">cargador iphone</th>
+          <td>1</td>
+          <td>$ 150</td>
+          <td>$ 150</td>
+        </tr>
+        <tr>
+          <th scope="row">cristal iphone</th>
+          <td>5</td>
+          <td>$ 25</td>
+          <td>$ 250</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="" align="center" style="margin: 50px;">
+      <button type="button" class="btn btn-success" style="width: 100%;">Terminar</button>
+    </div>
+  </div>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
